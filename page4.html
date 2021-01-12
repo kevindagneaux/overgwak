@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta  http-equiv="Content-type" content="text/html"/>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="Style/Style.css"/>
+        <script language="javascript">
+            var pseudoExistant = 'verdiers';
+            var emailExistant = 'oui';
+            var msgError = '';
+            var emailCorrect = 'ytouzain@gmail.com'
+            var mdp = 'ta mere se prend uniquement en levrette'
+            function verifForm() {
+                if (document.getElementById('pseudo').value == pseudoExistant) {
+                    alert(msgError = ('Ce pseudo est déjà pris : ' + pseudoExistant))
+                }
+                if (document.getElementById('email').value == emailExistant) {
+                    alert(msgError = ('Ce email est déjà pris : ' + emailExistant))
+                }
+            }
+            function verifCompte() {
+                if (document.getElementById('email').value == emailCorrect)
+                    alert(msgError = ('Adresse mail ou mot de passe incorrect'))
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container_body">
+            <h1>
+                inscription/Connexion
+            </h1> 
+            <div id="Inscription_pages4"> 
+                <h1>
+                    Inscription
+                </h1>
+                <form method="post" action="traitement.php">
+                    <p>
+                        <label for="nom">Nom</label> : <input type="text" name="nom" id="nom" placeholder="Dagneaux" size="30" maxlength="20" /> </br>
+                        </br>
+                        <label for="prenom">Prénom</label> : <input type="text" name="prenom" id="prenom" placeholder="Ex : TED" size="30" maxlength="20" /> </br>
+                        </br>
+                        <label for="pseudo">Votre pseudo</label> : <input type="text" name="pseudo" id="pseudo" placeholder="Ex : zeubi" size="30" maxlength="20" /> </br>
+                        </br>
+                        <label for="email">Email</label> : <input type="email" name="email" id="email" placeholder="Ex : abcd@gmail.com" size="30" maxlength="20" /> </br>
+                        </br>
+                        <label for="email">Confirmation du Email</label> : <input type="email" name="email" id="email" placeholder="Ex : abcd@gmail.com" size="30" maxlength="20" /> </br>
+                        </br>
+                        <label for="password">Mot de passe</label> : <input type="text" name="pass" id="pass" placeholder="Ex : zeubi" size="30" maxlength="20" /> </br>
+                        </br>
+                        <label for="password">Confirmation du Mot de passe</label> : <input type="text" name="pass" id="pass" placeholder="Ex : zeubi" size="30" maxlength="20" /> </br>
+                    </p>
+                </form>
+                <input type="submit" value="valider" onclick='verifForm()'/>
+            </div>
+            <div id="Conexion_pages4">
+                <h1>
+                    Conexion
+                </h1>
+                <label for="email">Email</label> : <input type="email" name="email" id="email" placeholder="Ex : abcd@gmail.com" size="30" maxlength="20" /> </br>
+                <label for="password">Mot de passe</label> : <input type="text" name="pass" id="pass" placeholder="Ex : zeubi" size="30" maxlength="20" /> </br>
+                <input type="submit" value="valider" onclick='verifCompte()'/>
+            </div>
+        </div>
+    </body>
+</html>

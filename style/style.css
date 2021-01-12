@@ -1,0 +1,88 @@
+#inscription {
+    position: static;
+	float: right;
+	background-color:rgb(255, 166, 0);
+}
+
+#connexion {
+    position: static;
+	float: right;
+	background-color: grey;
+}
+
+#overwatch_logo {
+	position: static;
+	width: 40%;
+	height: 80%;
+}
+
+.img_dim {
+	float: left;
+	display: flex;
+	width: 360px;
+	height: 360px;
+}
+
+
+
+
+
+
+
+
+.container{
+	width : 100%; /*1920px*/
+}
+
+.container .grid-1{width: 99.79%;} /* 100% - 0.21% */
+.container .grid-2{width: 49.79%;} /* 50% - 0.21% */
+.container .grid-3{width: 24.79%;} /* 25% - 0.21% */
+.container .grid-4{width: 12.29%;} /* 12.5% - 0.21% */
+.container .grid-5{width: 33.09%;} /* 33.3% - 0.21% */
+.container .grid-6{width: 74.79%;} /* 75% - 0.21% */
+.container .grid-7{width: 87.29%;} /* 87.5% - 0.21% */
+.container .grid-8{width: 66.39%;} /* 66.6% - 0.21% */
+.container .grid-9{width: 5.67%;}
+.container .grid-10{width: 14.07%;}
+.container .grid-11{width: 16.45%;}
+.container .grid-12{width: 0%;}
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12{
+	float: left;
+    margin: 0.105%; /* 0.105 = 2px /// marge a chaque bloque de 0.21 */
+	min-height: 50px; /* tu peux aussi mettre une width minimale pour la largeur */
+
+}
+.grid-1{
+	background-color:blue;
+}
+.grid-2{
+	background-color:red;
+}
+.grid-3{
+	background-color:yellow;
+}
+.grid-4{
+	background-color:purple;
+}
+.grid-5{
+	background-color:pink;
+}
+.grid-6{
+	background-color:orange;
+}
+.grid-7{
+	background-color:green;
+}
+.grid-8{
+	background-color:brown;
+}
+.grid-9 {
+	background-color: azure;
+}
+.grid-10 {
+	background-color: chartreuse;
+}
+.grid-11 {
+	background-color: coral;
+}
